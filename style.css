@@ -1,0 +1,16 @@
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.equal-height-row {
+  display: flex;
+  align-items: stretch;
+}
+.w3-third, .w3-twothird {
+  display: flex;
+  flex-direction: column;
+}
+.w3-third > .w3-card-4 {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 0;
+}

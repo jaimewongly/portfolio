@@ -1,0 +1,36 @@
+.top-section {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.left-column {
+  width: 30%;
+  background: #f8f8f8;
+  padding: 1rem;
+}
+
+.right-column {
+  width: 70%;
+  background: #fff;
+  padding: 1rem;
+}
+
+.projects-section {
+  padding: 1rem;
+  background: #eee;
+}
+
+.project-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tile {
+  flex: 1 1 200px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+}
