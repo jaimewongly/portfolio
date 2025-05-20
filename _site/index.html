@@ -20,24 +20,21 @@
   1. Can we embed a music player?
   2. Fun cursor?
   3. Get rid of width in pixels in about-me and make it proper
+  4. Get rid of style things in the HTML and put them in the CSS
+  5. Maybe add a background image?
+  6. Add this portfolio repo to the projects section
 -->
-    <!-- prettier-ignore -->
-    <!-- About Section -->
+    <!-- Page Container -->
+    <div class="w3-content main-page">
+      <!-- prettier-ignore -->
+      <!-- About Section -->
 
 <div
-  class="w3-content w3-center w3-card-4 w3-margin-top w3-margin-bottom w3-white w3-text-grey w3-padding-32"
-  style="max-width: 1165px"
+  class="w3-content w3-center w3-card-4 w3-margin-top w3-margin-bottom w3-white w3-text-grey w3-padding-32 section-width"
 >
-  <h2>About Me, The Food Man</h2>
+  <h2>About Me (Jaime!)</h2>
   <br />
-  <img
-    src="images/me.jpg"
-    alt="Me"
-    class="w3-image"
-    style="display: block; margin: auto"
-    width="200"
-    height="auto"
-  />
+  <img src="images/me.jpg" alt="Me" class="w3-image profile-image-tall" />
   <div class="w3-padding-32">
     <h4><b>I am Who I Am!</b></h4>
     <h6><i>With Passion For Real, Good Food</i></h6>
@@ -53,226 +50,212 @@
   </div>
 </div>
 
-    <!-- prettier-ignore -->
-    <!-- Page Container -->
-<div class="w3-content" style="max-width: 1200px">
-  <!-- The Grid -->
-  <div class="w3-row-padding equal-height-row">
-    <!-- Left Column -->
-    <div class="w3-third">
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img
-            src="images/me.jpg"
-            style="width: 100%; height: 300px"
-            alt="Avatar"
-          />
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2>Jaime Wong</h2>
-          </div>
-        </div>
-        <div class="w3-container">
-          <p>
-            <i
-              class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"
-            ></i
-            >Code Gardener, Bug Wrangler
-          </p>
-          <p>
-            <i
-              class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"
-            ></i
-            >Calgary, AB, Canada
-          </p>
-          <p>
-            <i
-              class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"
-            ></i
-            >wongjaimelynn@gmail.com
-          </p>
-          <p>
-            <i
-              class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"
-            ></i
-            >403-464-1160
-          </p>
-          <hr />
-
-          <p class="w3-large">
-            <b
-              ><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i
-              >Skills</b
-            >
-          </p>
-          <p>Adobe Photoshop</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div
-              class="w3-container w3-center w3-round-xlarge w3-teal"
-              style="width: 90%"
-            >
-              90%
-            </div>
-          </div>
-          <p>Photography</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div
-              class="w3-container w3-center w3-round-xlarge w3-teal"
-              style="width: 80%"
-            >
-              <div class="w3-center w3-text-white">80%</div>
-            </div>
-          </div>
-          <p>Illustrator</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div
-              class="w3-container w3-center w3-round-xlarge w3-teal"
-              style="width: 75%"
-            >
-              75%
-            </div>
-          </div>
-          <p>Media</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div
-              class="w3-container w3-center w3-round-xlarge w3-teal"
-              style="width: 50%"
-            >
-              50%
-            </div>
-          </div>
-          <br />
-
-          <p class="w3-large w3-text-theme">
-            <b
-              ><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i
-              >Languages</b
-            >
-          </p>
-          <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div
-              class="w3-round-xlarge w3-teal"
-              style="height: 24px; width: 100%"
-            ></div>
-          </div>
-          <p>Spanish</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div
-              class="w3-round-xlarge w3-teal"
-              style="height: 24px; width: 55%"
-            ></div>
-          </div>
-          <p>German</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div
-              class="w3-round-xlarge w3-teal"
-              style="height: 24px; width: 25%"
-            ></div>
-          </div>
-          <br />
+      <!-- prettier-ignore -->
+      <!-- The Grid -->
+<div class="w3-row-padding equal-height-row">
+  <!-- Left Column -->
+  <div class="w3-third">
+    <div class="w3-white w3-text-grey w3-card-4">
+      <div class="w3-display-container">
+        <img src="images/me.jpg" class="profile-image" alt="Avatar" />
+        <div class="w3-display-bottomleft w3-container w3-text-black">
+          <h2>Jaime Wong</h2>
         </div>
       </div>
+      <div class="w3-container">
+        <p>
+          <i
+            class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"
+          ></i
+          >Code Gardener, Bug Wrangler
+        </p>
+        <p>
+          <i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i
+          >Calgary, AB, Canada
+        </p>
+        <p>
+          <i
+            class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"
+          ></i
+          >wongjaimelynn@gmail.com
+        </p>
+        <p>
+          <i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i
+          >403-464-1160
+        </p>
+        <hr />
 
-      <!-- End Left Column -->
+        <p class="w3-large">
+          <b
+            ><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i
+            >Skills</b
+          >
+        </p>
+        <p>Adobe Photoshop</p>
+        <div class="w3-light-grey w3-round-xlarge w3-small">
+          <div
+            class="w3-container w3-center w3-round-xlarge w3-teal"
+            style="width: 90%"
+          >
+            90%
+          </div>
+        </div>
+        <p>Photography</p>
+        <div class="w3-light-grey w3-round-xlarge w3-small">
+          <div
+            class="w3-container w3-center w3-round-xlarge w3-teal"
+            style="width: 80%"
+          >
+            <div class="w3-center w3-text-white">80%</div>
+          </div>
+        </div>
+        <p>Illustrator</p>
+        <div class="w3-light-grey w3-round-xlarge w3-small">
+          <div
+            class="w3-container w3-center w3-round-xlarge w3-teal"
+            style="width: 75%"
+          >
+            75%
+          </div>
+        </div>
+        <p>Media</p>
+        <div class="w3-light-grey w3-round-xlarge w3-small">
+          <div
+            class="w3-container w3-center w3-round-xlarge w3-teal"
+            style="width: 50%"
+          >
+            50%
+          </div>
+        </div>
+        <br />
+
+        <p class="w3-large w3-text-theme">
+          <b
+            ><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i
+            >Languages</b
+          >
+        </p>
+        <p>English</p>
+        <div class="w3-light-grey w3-round-xlarge">
+          <div
+            class="w3-round-xlarge w3-teal"
+            style="height: 24px; width: 100%"
+          ></div>
+        </div>
+        <p>Spanish</p>
+        <div class="w3-light-grey w3-round-xlarge">
+          <div
+            class="w3-round-xlarge w3-teal"
+            style="height: 24px; width: 55%"
+          ></div>
+        </div>
+        <p>German</p>
+        <div class="w3-light-grey w3-round-xlarge">
+          <div
+            class="w3-round-xlarge w3-teal"
+            style="height: 24px; width: 25%"
+          ></div>
+        </div>
+        <br />
+      </div>
     </div>
 
-    <!-- Right Column -->
-    <div class="w3-twothird">
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16">
-          <i
-            class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"
-          ></i
-          >Work Experience
-        </h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity">
-            <b>Front End Developer / w3schools.com</b>
-          </h5>
-          <h6 class="w3-text-teal">
-            <i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 -
-            <span class="w3-tag w3-teal w3-round">Current</span>
-          </h6>
-          <p>
-            Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in
-            deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta
-            ea et odio, unde doloremque repellendus iure, iste.
-          </p>
-          <hr />
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-          <h6 class="w3-text-teal">
-            <i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec
-            2014
-          </h6>
-          <p>
-            Consectetur adipisicing elit. Praesentium magnam consectetur vel in
-            deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta
-            ea et odio, unde doloremque repellendus iure, iste.
-          </p>
-          <hr />
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity">
-            <b>Graphic Designer / designsomething.com</b>
-          </h5>
-          <h6 class="w3-text-teal">
-            <i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar
-            2012
-          </h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <br />
-        </div>
-      </div>
-
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16">
-          <i
-            class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"
-          ></i
-          >Education
-        </h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-teal">
-            <i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever
-          </h6>
-          <p>Web Development! All I need to know in one place</p>
-          <hr />
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>London Business School</b></h5>
-          <h6 class="w3-text-teal">
-            <i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015
-          </h6>
-          <p>Master Degree</p>
-          <hr />
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>School of Coding</b></h5>
-          <h6 class="w3-text-teal">
-            <i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013
-          </h6>
-          <p>Bachelor Degree</p>
-          <br />
-        </div>
-      </div>
-
-      <!-- End Right Column -->
-    </div>
-
-    <!-- End Grid -->
+    <!-- End Left Column -->
   </div>
 
-  <!-- End Page Container -->
+  <!-- Right Column -->
+  <div class="w3-twothird">
+    <div class="w3-container w3-card w3-white w3-margin-bottom">
+      <h2 class="w3-text-grey w3-padding-16">
+        <i
+          class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"
+        ></i
+        >Work Experience
+      </h2>
+      <div class="w3-container">
+        <h5 class="w3-opacity">
+          <b>Front End Developer / w3schools.com</b>
+        </h5>
+        <h6 class="w3-text-teal">
+          <i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 -
+          <span class="w3-tag w3-teal w3-round">Current</span>
+        </h6>
+        <p>
+          Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in
+          deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta
+          ea et odio, unde doloremque repellendus iure, iste.
+        </p>
+        <hr />
+      </div>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
+        <h6 class="w3-text-teal">
+          <i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec
+          2014
+        </h6>
+        <p>
+          Consectetur adipisicing elit. Praesentium magnam consectetur vel in
+          deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta
+          ea et odio, unde doloremque repellendus iure, iste.
+        </p>
+        <hr />
+      </div>
+      <div class="w3-container">
+        <h5 class="w3-opacity">
+          <b>Graphic Designer / designsomething.com</b>
+        </h5>
+        <h6 class="w3-text-teal">
+          <i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar
+          2012
+        </h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <br />
+      </div>
+    </div>
+
+    <div class="w3-container w3-card w3-white">
+      <h2 class="w3-text-grey w3-padding-16">
+        <i
+          class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"
+        ></i
+        >Education
+      </h2>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
+        <h6 class="w3-text-teal">
+          <i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever
+        </h6>
+        <p>Web Development! All I need to know in one place</p>
+        <hr />
+      </div>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>London Business School</b></h5>
+        <h6 class="w3-text-teal">
+          <i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015
+        </h6>
+        <p>Master Degree</p>
+        <hr />
+      </div>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>School of Coding</b></h5>
+        <h6 class="w3-text-teal">
+          <i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013
+        </h6>
+        <p>Bachelor Degree</p>
+        <br />
+      </div>
+    </div>
+
+    <!-- End Right Column -->
+  </div>
+
+  <!-- End Grid -->
 </div>
 
-    <!-- prettier-ignore -->
-    <!-- !PAGE CONTENT! -->
+      <!-- prettier-ignore -->
+      <!-- !PAGE CONTENT! -->
 <div
-  class="w3-content w3-center w3-card-4 w3-margin-top w3-margin-bottom"
-  style="max-width: 1165px"
+  class="w3-content w3-center w3-card-4 w3-margin-top w3-margin-bottom section-width"
 >
   <!--div class="w3-container w3-card-4 w3-white w3-margin-bottom"
       "w3-main w3-content w3-padding w3-margin-top"-->
@@ -284,46 +267,32 @@
     <h2 class="w3-text-grey w3-padding-16 w3-center w3-white">Projects</h2>
 
     <div class="w3-quarter">
-      <img
-        src="images/clueless.png"
-        alt="Sandwich"
-        style="height: 150px; width: 260px"
-      />
+      <img src="images/clueless.png" alt="Sandwich" class="project-card" />
       <h3>Clueless</h3>
       <p>
         A dress-up app. Work in progress!<br />
-        <a href="https://github.com/jaimewongly/clueless" style="color: blue"
+        <a href="https://github.com/jaimewongly/clueless" class="link"
           >Check it out!</a
         >
       </p>
     </div>
     <div class="w3-quarter">
-      <img
-        src="images/flyingpigracers.png"
-        alt="Steak"
-        style="height: 150px; width: 260px"
-      />
+      <img src="images/flyingpigracers.png" alt="Steak" class="project-card" />
       <h3>Flying Pig Racers</h3>
       <p>
         A racing game inspired by the beloved Faerie Cloud Racers from
         Neopets.<br />
-        <a
-          href="https://farmer-jaim.itch.io/flying-pig-racers"
-          style="color: blue"
+        <a href="https://farmer-jaim.itch.io/flying-pig-racers" class="link"
           >Play it here!</a
         >
       </p>
     </div>
     <div class="w3-quarter">
-      <img
-        src="images/bearvania.png"
-        alt="Cherries"
-        style="height: 150px; width: 260px"
-      />
+      <img src="images/bearvania.png" alt="Cherries" class="project-card" />
       <h3>Bearvania</h3>
       <p>
         A short platformer.<br />
-        <a href="https://farmer-jaim.itch.io/bearvania" style="color: blue"
+        <a href="https://farmer-jaim.itch.io/bearvania" class="link"
           >Play it here!</a
         >
       </p>
@@ -332,12 +301,12 @@
       <img
         src="images/laserdefender.png"
         alt="Pasta and Wine"
-        style="height: 150px; width: 260px"
+        class="project-card"
       />
       <h3>Laser Defender</h3>
       <p>
         An arcade style space shooter.<br />
-        <a href="https://farmer-jaim.itch.io/laser-defender" style="color: blue"
+        <a href="https://farmer-jaim.itch.io/laser-defender" class="link"
           >Play it here!</a
         >
       </p>
@@ -350,61 +319,45 @@
       <img
         src="images/inlovewithaghost.png"
         alt="Popsicle"
-        style="height: 150px; width: 260px"
+        class="project-card"
       />
       <h3>In Love With a Ghost</h3>
       <p>
         A point and click adventure made for the $104 Adventure Game
         Challenge.<br />
-        <a
-          href="https://farmer-jaim.itch.io/in-love-with-a-ghost"
-          style="color: blue"
+        <a href="https://farmer-jaim.itch.io/in-love-with-a-ghost" class="link"
           >Play it here!</a
         >
       </p>
     </div>
     <div class="w3-quarter">
-      <img
-        src="images/rocketpilot.png"
-        alt="Salmon"
-        style="height: 150px; width: 260px"
-      />
+      <img src="images/rocketpilot.png" alt="Salmon" class="project-card" />
       <h3>Rocket Pilot</h3>
       <p>
         A rocket flying adventure.<br />
-        <a href="https://farmer-jaim.itch.io/rocket-pilot" style="color: blue"
+        <a href="https://farmer-jaim.itch.io/rocket-pilot" class="link"
           >Play it here!</a
         >
       </p>
     </div>
     <div class="w3-quarter">
-      <img
-        src="images/letsgofishing.jpg"
-        alt="Sandwich"
-        style="height: 150px; width: 260px"
-      />
+      <img src="images/letsgofishing.jpg" alt="Sandwich" class="project-card" />
       <h3>Let's Go Fishing!</h3>
       <p>
         A fishing game.<br />
-        <a
-          href="https://farmer-jaim.itch.io/lets-go-fishing"
-          style="color: blue"
+        <a href="https://farmer-jaim.itch.io/lets-go-fishing" class="link"
           >Play it here!</a
         >
       </p>
     </div>
     <div class="w3-quarter">
-      <img
-        src="images/elmo2.jpg"
-        alt="Croissant"
-        style="height: 150px; width: 260px"
-      />
+      <img src="images/elmo2.jpg" alt="Croissant" class="project-card" />
       <h3>Future Stuff</h3>
       <p>
         More projects coming
         <a
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
-          style="color: blue"
+          class="link"
           >soon!</a
         >
       </p>
@@ -412,5 +365,7 @@
   </div>
 </div>
 
+      <!-- End Page Container -->
+    </div>
   </body>
 </html>
