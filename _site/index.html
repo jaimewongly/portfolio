@@ -25,6 +25,8 @@
   9. Change alt text for images
   10. Clean up IDs
   12. Coordinate colours
+  13. Add emojis to replace old icons
+  14. Add fun theme... link to page that's the same but spooky emojis etc
 -->
     <div class="w3-content main-page">
       <!-- prettier-ignore -->
@@ -32,7 +34,7 @@
   class="w3-content w3-center w3-card-4 w3-margin-top w3-margin-bottom w3-white w3-text-grey section-width"
 >
   <hr />
-  <h2>About Me (Jaime!)</h2>
+  <h2 class="section-title about">About Me (Jaime!)</h2>
   <br />
   <img src="images/me.jpg" alt="Me" class="w3-image profile-image-tall" />
   <h4><b>I am Who I Am!</b></h4>
@@ -79,6 +81,8 @@
       >403-464-1160
     </p>
     <hr />
+
+    <button onclick="toggleTheme()">Switch Theme</button>
 
     <p class="w3-large">
       <b
@@ -207,10 +211,8 @@
   <!-- prettier-ignore -->
   <div class="w3-container w3-card w3-white">
   <h2 class="w3-text-grey w3-padding-16">
-    <i
-      class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"
-    ></i
-    >Education
+    <span role="img" aria-label="education">🎓</span>
+    Education
   </h2>
   <div class="w3-container">
     <h5 class="w3-opacity"><b>University of Calgary</b></h5>
@@ -353,5 +355,10 @@
 </section>
 
     </div>
+    <script>
+      function toggleTheme() {
+        document.body.classList.toggle("alt-theme");
+      }
+    </script>
   </body>
 </html>

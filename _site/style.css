@@ -11,6 +11,8 @@ h6 {
 }
 .main-page {
   max-width: 1200px;
+  width: 100%;
+  margin: auto;
 }
 
 /* Resume section styles */
@@ -38,6 +40,8 @@ h6 {
 /* Other section styles */
 .section-width {
   max-width: 1165px;
+  width: 100%;
+  margin: auto;
 }
 .profile-image-tall {
   display: block;
@@ -53,4 +57,17 @@ h6 {
 }
 .link {
   color: blue;
+}
+
+/* Responsive styles */
+:root {
+  --about-icon: "🙌"; /* default theme */
+}
+
+h2.about::before {
+  content: var(--about-icon);
+  margin-right: 0.5rem;
+}
+.alt-theme {
+  --about-icon: "🦇"; /* spooky theme */
 }

@@ -25,6 +25,8 @@
   9. Change alt text for images
   10. Clean up IDs
   12. Coordinate colours
+  13. Add emojis to replace old icons
+  14. Add fun theme... link to page that's the same but spooky emojis etc
 -->
     <div class="w3-content main-page">
       <!-- prettier-ignore -->
@@ -34,5 +36,10 @@
       <!-- prettier-ignore -->
       {% include projects/projects.html %}
     </div>
+    <script>
+      function toggleTheme() {
+        document.body.classList.toggle("alt-theme");
+      }
+    </script>
   </body>
 </html>
