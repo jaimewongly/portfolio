@@ -20,32 +20,80 @@
   1. Can we embed a music player?
   2. Fun cursor?
   3. Maybe add a background image?
-  6. Add this portfolio repo to the projects section
   7. Other fun things to add?
-  9. Change alt text for images
-  10. Clean up IDs
   12. Coordinate colours
   13. Add emojis to replace old icons
   14. Add fun theme... link to page that's the same but spooky emojis etc
   15. Fill out fun theme
-  16. Replace some divs with semantic HTML
-  17. Add tech stack to work experience
   18. Look for typos
+  20. Figure out why scaling is weird
 -->
     <div class="w3-content main-page">
       <!-- prettier-ignore -->
-      <section
+      <h2 class="section-title about">About Me (Jaime!)</h2>
+<button onclick="toggleTheme()">Switch Theme</button>
+<br />
+<section class="w3-row-padding equal-height-row">
+  <div class="w3-third">
+    <div
+      class="about-card w3-content w3-center w3-card-4 w3-margin-top w3-margin-bottom w3-white w3-text-grey"
+    >
+      <img
+        id="about-pic"
+        src="images/me.jpg"
+        alt="Me"
+        class="w3-image profile-image-tall"
+      />
+    </div>
+  </div>
+  <div class="w3-third">
+    <div
+      class="about-card w3-content w3-center w3-card-4 w3-margin-top w3-margin-bottom w3-white w3-text-grey"
+    >
+      <img
+        id="about-pic"
+        src="images/me.jpg"
+        alt="Me"
+        class="w3-image profile-image-tall"
+      />
+    </div>
+  </div>
+  <div class="w3-third">
+    <div
+      class="about-card w3-content w3-center w3-card-4 w3-margin-top w3-margin-bottom w3-white w3-text-grey"
+    >
+      <img
+        id="about-pic"
+        src="images/me.jpg"
+        alt="Me"
+        class="w3-image profile-image-tall"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- <section
   class="w3-content w3-center w3-card-4 w3-margin-top w3-margin-bottom w3-white w3-text-grey section-width"
 >
   <hr />
   <h2 class="section-title about">About Me (Jaime!)</h2>
+  <button onclick="toggleTheme()">Switch Theme</button>
   <br />
-  <img src="images/me.jpg" alt="Me" class="w3-image profile-image-tall" />
-  <h4><b>title</b></h4>
-  <h6><i>subtitle</i></h6>
-  <p class="w3-padding">...</p>
+  <header>
+    <div class="about-header">
+      <p class="w3-padding w3-large">
+        creative coder - runner - collage enthusiast - monster fan
+      </p>
+      <img
+        id="about-pic"
+        src="images/me.jpg"
+        alt="Me"
+        class="w3-image profile-image-tall w3-padding"
+      />
+    </div>
+  </header>
   <br />
-</section>
+</section> -->
 
       <!-- prettier-ignore -->
       <section class="w3-row-padding equal-height-row">
@@ -54,10 +102,12 @@
   <!-- prettier-ignore -->
   <div class="w3-white w3-text-grey w3-card-4">
   <div class="w3-display-container">
-    <img src="images/me.jpg" class="profile-image" alt="Avatar" />
-    <div class="w3-display-bottomleft w3-container w3-text-black">
-      <h2>Jaime Wong</h2>
-    </div>
+    <img
+      id="profile-pic"
+      src="images/meandlulu.jpg"
+      class="profile-image"
+      alt="Jaime"
+    />
   </div>
   <div class="w3-container">
     <p>
@@ -77,8 +127,6 @@
       >403-464-1160
     </p>
     <hr />
-
-    <button onclick="toggleTheme()">Switch Theme</button>
 
     <p class="w3-large">
       <b
@@ -175,67 +223,68 @@
 </section>
 
       <!-- prettier-ignore -->
-      <section
-  class="w3-content w3-center w3-card-4 w3-margin-top w3-margin-bottom section-width"
->
-  <!-- prettier-ignore -->
-  <div
-  class="w3-row-padding w3-padding-16 w3-center w3-white w3-text-grey"
-  id="food"
->
-  <h2 class="w3-text-grey w3-padding-16 w3-center w3-white">Projects</h2>
-  <!-- First photo grid -->
-  <div class="w3-quarter">
-    <img src="images/clueless.png" alt="Sandwich" class="project-card" />
-    <h3>Clueless</h3>
-    <p>
-      A dress-up app. Work in progress!<br />
-      <a href="https://github.com/jaimewongly/clueless" class="link"
-        >Check it out!</a
-      >
-    </p>
-  </div>
-  <div class="w3-quarter">
-    <img src="images/elmo.jpg" alt="Pasta and Wine" class="project-card" />
-    <h3>Portfolio</h3>
-    <p>
-      A very nice portfolio.<br />
-      <a
-        href="https://github.com/jaimewongly/portfolio?tab=readme-ov-file#portfolio"
-        class="link"
-        >Check it out!</a
-      >
-    </p>
-  </div>
-  <div class="w3-quarter">
-    <img src="images/flyingpigracers.png" alt="Steak" class="project-card" />
-    <h3>Flying Pig Racers</h3>
-    <p>
-      A racing game inspired by the beloved Faerie Cloud Racers from Neopets.<br />
-      <a href="https://farmer-jaim.itch.io/flying-pig-racers" class="link"
-        >Play it here!</a
-      >
-    </p>
-  </div>
-  <div class="w3-quarter">
-    <img src="images/bearvania.png" alt="Cherries" class="project-card" />
-    <h3>Bearvania</h3>
-    <p>
-      A short platformer.<br />
-      <a href="https://farmer-jaim.itch.io/bearvania" class="link"
-        >Play it here!</a
-      >
-    </p>
-  </div>
+      <section class="w3-row">
+  <div class="w3-col w3-full project-box">
+    <div class="w3-center w3-card-4 w3-margin-top w3-margin-bottom w3-white">
+      <!-- prettier-ignore -->
+      <!-- <div class="w3-row-padding w3-padding-16 w3-center w3-white w3-text-grey"> -->
+<h2 class="w3-text-grey w3-padding-16 w3-center w3-white">Projects</h2>
+<!-- First photo grid -->
+<div class="w3-quarter">
+  <img src="images/clueless.png" alt="Clueless" class="project-card" />
+  <h3>Clueless</h3>
+  <p>
+    A dress-up app. Work in progress!<br />
+    <a href="https://github.com/jaimewongly/clueless" class="link"
+      >Check it out!</a
+    >
+  </p>
 </div>
+<div class="w3-quarter">
+  <img src="images/elmo.jpg" alt="Elmo" class="project-card" />
+  <h3>Portfolio</h3>
+  <p>
+    A very nice portfolio.<br />
+    <a
+      href="https://github.com/jaimewongly/portfolio?tab=readme-ov-file#portfolio"
+      class="link"
+      >Check it out!</a
+    >
+  </p>
+</div>
+<div class="w3-quarter">
+  <img
+    src="images/flyingpigracers.png"
+    alt="Flying Pig Racers"
+    class="project-card"
+  />
+  <h3>Flying Pig Racers</h3>
+  <p>
+    A racing game inspired by the beloved Faerie Cloud Racers from Neopets.<br />
+    <a href="https://farmer-jaim.itch.io/flying-pig-racers" class="link"
+      >Play it here!</a
+    >
+  </p>
+</div>
+<div class="w3-quarter">
+  <img src="images/bearvania.png" alt="Bearvania" class="project-card" />
+  <h3>Bearvania</h3>
+  <p>
+    A short platformer.<br />
+    <a href="https://farmer-jaim.itch.io/bearvania" class="link"
+      >Play it here!</a
+    >
+  </p>
+</div>
+<!-- </div> -->
 
-  <!-- prettier-ignore -->
-  <!-- Second Photo Grid-->
+      <!-- prettier-ignore -->
+      <!-- Second Photo Grid-->
 <div class="w3-row-padding w3-padding-16 w3-center w3-white w3-text-grey">
   <div class="w3-quarter">
     <img
       src="images/inlovewithaghost.png"
-      alt="Popsicle"
+      alt="In Love With a Ghost"
       class="project-card"
     />
     <h3>In Love With a Ghost</h3>
@@ -247,7 +296,7 @@
     </p>
   </div>
   <div class="w3-quarter">
-    <img src="images/rocketpilot.png" alt="Salmon" class="project-card" />
+    <img src="images/rocketpilot.png" alt="Rocket Pilot" class="project-card" />
     <h3>Rocket Pilot</h3>
     <p>
       A rocket flying adventure. Boost your rocket to victory!<br />
@@ -257,7 +306,11 @@
     </p>
   </div>
   <div class="w3-quarter">
-    <img src="images/letsgofishing.jpg" alt="Sandwich" class="project-card" />
+    <img
+      src="images/letsgofishing.jpg"
+      alt="Let's Go Fishing"
+      class="project-card"
+    />
     <h3>Let's Go Fishing!</h3>
     <p>
       A cozy fishing game.<br />
@@ -269,7 +322,7 @@
   <div class="w3-quarter">
     <img
       src="images/laserdefender.png"
-      alt="Pasta and Wine"
+      alt="Laser Defender"
       class="project-card"
     />
     <h3>Laser Defender</h3>
@@ -282,10 +335,10 @@
   </div>
 </div>
 
-  <!-- prettier-ignore -->
-  <div class="w3-row-padding w3-padding-16 w3-center w3-white w3-text-grey">
+      <!-- prettier-ignore -->
+      <div class="w3-row-padding w3-padding-16 w3-center w3-white w3-text-grey">
   <div class="w3-quarter">
-    <img src="images/elmo2.jpg" alt="Croissant" class="project-card" />
+    <img src="images/elmo2.jpg" alt="Elmo" class="project-card" />
     <h3>Future Stuff</h3>
     <p>
       More projects coming
@@ -298,13 +351,11 @@
   </div>
 </div>
 
+    </div>
+  </div>
 </section>
 
     </div>
-    <script>
-      function toggleTheme() {
-        document.body.classList.toggle("alt-theme");
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
