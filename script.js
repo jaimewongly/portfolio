@@ -1,11 +1,13 @@
-const themeToggleButton = document.getElementById("theme-toggle");
 const profilePic = document.getElementById("profile-pic");
 const aboutPic = document.getElementById("about-pic");
+const cards = document.querySelectorAll(".card");
+const card3 = document.getElementById("card3");
 
 function toggleTheme() {
   document.body.classList.toggle("alt-theme");
   toggleProfileImage();
   toggleAboutImage();
+  toggleFrameEffect();
 }
 
 function toggleProfileImage() {
@@ -22,4 +24,11 @@ function toggleAboutImage() {
     .replace(/["']/g, "")
     .trim();
   aboutPic.src = newSrc;
+}
+
+function toggleFrameEffect() {
+  cards.forEach((card) => {
+    card.classList.toggle("outer-frame");
+  });
+  card3.classList.toggle("card-frame-3");
 }

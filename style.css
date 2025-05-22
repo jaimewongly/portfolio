@@ -18,14 +18,13 @@ h6 {
 /* About section styles */
 .profile-image-tall {
   width: 100%;
-  height: auto;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
+  height: 100%;
 }
 .about-card {
+  max-width: 378px;
+  max-height: 494px;
   width: 100%;
+  padding: 16px;
 }
 .about-row {
   display: flex;
@@ -97,26 +96,26 @@ h6 {
   color: blue;
 }
 .outer-frame {
-  background-image: url("images/output-onlinepngtools.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: transparent;
-  padding: 60px;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .inner-frame {
   max-width: 100%;
   max-height: 100%;
   box-sizing: border-box;
-  border-radius: 8px;
+  flex: 1 1 auto;
 }
-.outer-frame.w3-card-4 {
-  background-color: transparent !important;
-  box-shadow: none !important;
-  border: none !important;
+.card-frame-3 {
+  padding: 23% 21% 25% 22%; /* top, right, bottom, left */
+  background-image: url("images/output-onlinepngtools.png");
 }
 
 /* Responsive styles */
