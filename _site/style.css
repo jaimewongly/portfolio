@@ -25,11 +25,20 @@ h6 {
   padding-right: 16px;
 }
 .about-card {
-  max-width: 400px;
   width: 100%;
-  flex: 1 1 auto;
+}
+.about-row {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.about-mini-card {
+  width: 100%;
+  aspect-ratio: 3 / 3;
+  object-fit: cover;
+  flex: 1 1 auto;
 }
 
 /* Resume section styles */
@@ -65,15 +74,6 @@ h6 {
   padding-left: 16px;
   padding-right: 16px;
 }
-
-/* Other section styles */
-.section-width {
-  max-width: 1165px;
-  width: 100%;
-  margin: auto;
-}
-
-/* Card styles */
 .project-row {
   display: flex;
   gap: 16px;
@@ -85,6 +85,13 @@ h6 {
   aspect-ratio: 5 / 3;
   object-fit: cover;
   flex: 1 1 auto;
+}
+
+/* Other section styles */
+.section-width {
+  max-width: 1165px;
+  width: 100%;
+  margin: auto;
 }
 .link {
   color: blue;
