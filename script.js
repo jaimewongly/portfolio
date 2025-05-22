@@ -2,6 +2,7 @@ const profilePic = document.getElementById("profile-pic");
 const aboutPic = document.getElementById("about-pic");
 const cards = document.querySelectorAll(".card");
 const card3 = document.getElementById("card3");
+const card7 = document.getElementById("card7");
 
 function toggleTheme() {
   document.body.classList.toggle("alt-theme");
@@ -31,4 +32,5 @@ function toggleFrameEffect() {
     card.classList.toggle("outer-frame");
   });
   card3.classList.toggle("card-frame-3");
+  card7.classList.toggle("card-frame-7");
 }

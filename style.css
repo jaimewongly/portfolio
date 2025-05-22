@@ -69,16 +69,18 @@ h6 {
 }
 
 /* Project section styles */
-.project-box {
-  padding-left: 16px;
-  padding-right: 16px;
+.project-card {
+  max-width: 1168px;
+  max-height: 1260px;
+  width: 100%;
 }
 .project-row {
   display: flex;
   gap: 16px;
-  padding: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
-.project-card {
+.project-mini-card {
   max-width: 300px;
   width: 100%;
   aspect-ratio: 5 / 3;
@@ -106,16 +108,24 @@ h6 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  box-sizing: border-box;
 }
 .inner-frame {
-  max-width: 100%;
-  max-height: 100%;
+  height: 100%;
   box-sizing: border-box;
   flex: 1 1 auto;
+  background-color: white;
 }
 .card-frame-3 {
   padding: 23% 21% 25% 22%; /* top, right, bottom, left */
-  background-image: url("images/output-onlinepngtools.png");
+  background-image: url("images/frame3.png");
+}
+.card-frame-7 {
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 1260px;
+  padding: 14% 8% 14% 8%; /* top, right, bottom, left */
+  background-image: url("images/frame7.png");
 }
 
 /* Responsive styles */
