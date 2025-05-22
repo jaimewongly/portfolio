@@ -96,6 +96,28 @@ h6 {
 .link {
   color: blue;
 }
+.outer-frame {
+  background-image: url("images/output-onlinepngtools.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner-frame {
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.outer-frame.w3-card-4 {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
 
 /* Responsive styles */
 :root {
