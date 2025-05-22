@@ -121,7 +121,23 @@ h6 {
   padding: 11% 11% 11% 11%; /* top, right, bottom, left */
   background-image: url("images/frame.png");
 }
+.card-frame-2 {
+  padding: 11% 11% 11% 11%; /* top, right, bottom, left */
+  background-image: url("images/frame2.png");
+}
 .card-frame-3 {
+  padding: 23% 21% 25% 22%; /* top, right, bottom, left */
+  background-image: url("images/frame3.png");
+}
+.card-frame-4 {
+  padding: 11% 11% 11% 11%; /* top, right, bottom, left */
+  background-image: url("images/frame.png");
+}
+.card-frame-5 {
+  padding: 11% 11% 11% 11%; /* top, right, bottom, left */
+  background-image: url("images/frame.png");
+}
+.card-frame-6 {
   padding: 23% 21% 25% 22%; /* top, right, bottom, left */
   background-image: url("images/frame3.png");
 }
