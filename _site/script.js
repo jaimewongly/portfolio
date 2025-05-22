@@ -1,6 +1,7 @@
 const profilePic = document.getElementById("profile-pic");
 const aboutPic = document.getElementById("about-pic");
 const cards = document.querySelectorAll(".card");
+const card1 = document.getElementById("card1");
 const card3 = document.getElementById("card3");
 const card7 = document.getElementById("card7");
 
@@ -31,6 +32,7 @@ function toggleFrameEffect() {
   cards.forEach((card) => {
     card.classList.toggle("outer-frame");
   });
+  card1.classList.toggle("card-frame-1");
   card3.classList.toggle("card-frame-3");
   card7.classList.toggle("card-frame-7");
 }
