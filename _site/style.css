@@ -134,8 +134,10 @@ h6 {
   background-image: url("images/frame4.png");
 }
 .card-frame-5 {
-  padding: 11% 11% 11% 11%; /* top, right, bottom, left */
-  background-image: url("images/frame.png");
+  padding: 6% 5% 7% 5%; /* top, right, bottom, left */
+  background-image: url("images/frame5.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .card-frame-6 {
   padding: 23% 21% 25% 22%; /* top, right, bottom, left */
