@@ -96,11 +96,25 @@ function handleCommand(cmd) {
       break;
     case "elmo overload":
       response = "WARNING: Too much Elmo... initiating meltdown.";
-      // Add chaos here 💥
+      triggerJumpscare();
       break;
     default:
       response = "Unknown command. Type 'help' for options.";
   }
 
   output.innerHTML += `<br>$ ${cmd}<br>${response}`;
+}
+
+function triggerJumpscare() {
+  setTimeout(() => {
+    const scare = document.getElementById("jumpscare");
+    const sound = document.getElementById("scream");
+
+    scare.style.display = "flex";
+    sound.play();
+
+    setTimeout(() => {
+      scare.style.display = "none";
+    }, 1500);
+  }, 1000);
 }

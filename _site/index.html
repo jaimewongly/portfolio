@@ -40,13 +40,13 @@
       <br />
       <section class="about-row">
         <div class="w3-third">
-          <button class="big-button music" onclick="changeSong()"></button>
+          <button class="big-button music" onclick="changeSong()">.</button>
         </div>
         <div class="w3-third">
-          <button class="big-button radio" onclick="toggleMusic()"></button>
+          <button class="big-button radio" onclick="toggleMusic()">.</button>
         </div>
         <div class="w3-third">
-          <button class="big-button magic" onclick="toggleTheme()"></button>
+          <button class="big-button magic" onclick="toggleTheme()">.</button>
         </div>
       </section>
       <div class="w3-padding-16">
@@ -60,6 +60,10 @@
           autoplay
         ></audio>
       </div>
+      <div id="jumpscare">
+        <img src="images/scaryelmo.png" alt="Elmo Jumpscare" />
+      </div>
+      <audio id="scream" src="assets/elmo-laughing.mp3"></audio>
       <div class="w3-padding">
         <div id="terminal" class="terminal">
           <div id="output">Welcome to JaimeShell™. Type 'help' to begin.</div>

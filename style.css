@@ -77,6 +77,43 @@ h2 {
   width: 90%;
 }
 
+#jumpscare {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: flash 0.2s ease-in-out;
+}
+#jumpscare img {
+  max-width: 100%;
+  max-height: 100%;
+  animation: zoomIn 0.3s ease-out;
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    background-color: red;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
 /* Resume section styles */
 .equal-height-row {
   display: flex;
