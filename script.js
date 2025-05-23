@@ -9,6 +9,7 @@ const card5 = document.getElementById("card5");
 const card6 = document.getElementById("card6");
 const card7 = document.getElementById("card7");
 const card8 = document.getElementById("card8");
+const card9 = document.getElementById("card9");
 const songs = [
   "assets/track1.mp3",
   "assets/track2.mp3",
@@ -49,6 +50,7 @@ function toggleFrameEffect() {
   card6.classList.toggle("card-frame-6");
   card7.classList.toggle("card-frame-7");
   card8.classList.toggle("card-frame-8");
+  card9.classList.toggle("card-frame-9");
 }
 
 function toggleMusic() {
@@ -117,4 +119,13 @@ function triggerJumpscare() {
       scare.style.display = "none";
     }, 1500);
   }, 1000);
+}
+
+const emojis = ["🥚", "🦕", "🥚", "🐉", "🥚", "🐢"];
+let current = 0;
+
+function toggleAnimal() {
+  const button = document.getElementById("egg-button");
+  current = (current + 1) % emojis.length;
+  button.textContent = emojis[current];
 }

@@ -31,6 +31,10 @@ h2 {
   width: 100%;
   height: 100%;
 }
+.control-card {
+  display: flex;
+  flex-direction: column;
+}
 .about-card {
   max-width: 378px;
   max-height: 494px;
@@ -50,6 +54,12 @@ h2 {
   object-fit: cover;
   flex: 1 1 auto;
 }
+.terminal-card {
+  padding: 16px;
+  width: 100%;
+  height: auto;
+  max-height: 340px;
+}
 .big-button {
   font-size: 2.5rem;
 }
@@ -62,10 +72,10 @@ h2 {
   color: rgb(50, 205, 200);
   font-family: monospace;
   padding: 1rem;
-  height: 200px;
+  height: 306px;
   overflow-y: auto;
   max-width: 600px;
-  max-height: 230px;
+  max-height: 100%;
   width: 100%;
   margin: 0 auto;
 }
@@ -201,8 +211,9 @@ h2 {
   background-color: white;
 }
 .card-frame-1 {
-  padding: 11% 11% 11% 11%; /* top, right, bottom, left */
-  background-image: url("images/frame.png");
+  padding: 3% 5% 3% 5%; /* top, right, bottom, left */
+  background-image: url("images/frame6.png");
+  max-height: 137px;
 }
 .card-frame-2 {
   padding: 11% 11% 11% 11%; /* top, right, bottom, left */
@@ -239,6 +250,11 @@ h2 {
   padding: 20% 19% 19% 19%; /* top, right, bottom, left */
   background-image: url("images/frame8.jpg");
 }
+.card-frame-9 {
+  max-width: 100%;
+  padding: 9% 12% 9% 12%; /* top, right, bottom, left */
+  background-image: url("images/frame.png");
+}
 
 /* Responsive styles */
 :root {
@@ -250,7 +266,6 @@ h2 {
   --education-icon: "🎓";
   --work-icon: "💻";
   --radio-icon: "📻";
-  --music-icon: "🎵";
   --magic-icon: "🔮";
   --hobby1-icon: "👟";
   --hobby2-icon: "🖊️";
@@ -267,7 +282,6 @@ h2 {
   --education-icon: "📜";
   --work-icon: "🧠";
   --radio-icon: "🪕";
-  --music-icon: "🎶";
   --magic-icon: "🪄";
   --hobby1-icon: "🌪️";
   --hobby2-icon: "✏️";
@@ -305,10 +319,6 @@ h2 {
 }
 .radio::before {
   content: var(--radio-icon);
-  margin-right: 0.5rem;
-}
-.music::before {
-  content: var(--music-icon);
   margin-right: 0.5rem;
 }
 .magic::before {
