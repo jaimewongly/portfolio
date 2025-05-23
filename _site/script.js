@@ -1,3 +1,4 @@
+const body = document.body;
 const profilePic = document.getElementById("profile-pic");
 const aboutPic = document.getElementById("about-pic");
 const cards = document.querySelectorAll(".card");
@@ -20,6 +21,10 @@ const songs = [
 function toggleTheme() {
   document.body.classList.toggle("alt-theme");
   toggleFrameEffect();
+}
+
+function toggleWallpaper() {
+  document.body.classList.toggle("wallpaper");
 }
 
 function toggleProfileImage() {

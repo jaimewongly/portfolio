@@ -20,6 +20,12 @@ h2 {
 .uniform-padding {
   padding: 16px;
 }
+.wallpaper {
+  background-image: url("images/bg10.png");
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: center center;
+}
 
 /* Text styles */
 .old-job-text {
@@ -258,7 +264,7 @@ h2 {
 
 /* Responsive styles */
 :root {
-  --about-icon: "🙌";
+  --about-icon: "⭐";
   --occupation-icon: "🌱";
   --home-icon: "🏡";
   --email-icon: "📧";
@@ -270,11 +276,12 @@ h2 {
   --hobby1-icon: "👟";
   --hobby2-icon: "🖊️";
   --hobby3-icon: "🖼️";
+  --project-icon: "💾";
   --profile-image: "images/meandlulu.jpg";
   --about-image: "images/me.jpg";
 }
 .alt-theme {
-  --about-icon: "🦇";
+  --about-icon: "🙌";
   --occupation-icon: "🍀";
   --home-icon: "🏰";
   --email-icon: "💌";
@@ -286,6 +293,7 @@ h2 {
   --hobby1-icon: "🌪️";
   --hobby2-icon: "✏️";
   --hobby3-icon: "🪷";
+  --project-icon: "✨";
   --profile-image: "images/meandlulu2.jpg";
   --about-image: "images/me2.jpg";
 }
@@ -335,5 +343,9 @@ h2 {
 }
 .hobby3::before {
   content: var(--hobby3-icon);
+  margin-right: 0.5rem;
+}
+.project::before {
+  content: var(--project-icon);
   margin-right: 0.5rem;
 }
