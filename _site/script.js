@@ -131,5 +131,5 @@ let current = 0;
 function toggleAnimal() {
   const button = document.getElementById("egg-button");
   current = (current + 1) % emojis.length;
-  button.textContent = emojis[current];
+  button.innerHTML = emojis[current] + "<br>Click Me!";
 }
