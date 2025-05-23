@@ -89,13 +89,13 @@ input.addEventListener("keydown", function (e) {
 
 function handleCommand(cmd) {
   let response = "";
-
   switch (cmd.toLowerCase()) {
     case "help":
       response = "Available commands: help, whoami, joke, elmo overload";
       break;
     case "whoami":
-      response = "Name: Jaime | Role: Code Gardener | Alignment: Chaotic Good";
+      response =
+        "Name: Jaime | Bug Catcher | Marathon Completer | Current Goal: Conquer Expo";
       break;
     case "joke":
       response =
@@ -108,7 +108,6 @@ function handleCommand(cmd) {
     default:
       response = "Unknown command. Type 'help' for options.";
   }
-
   output.innerHTML += `<br>$ ${cmd}<br>${response}`;
 }
 
