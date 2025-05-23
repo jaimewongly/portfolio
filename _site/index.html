@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="w3-light-grey">
+    <link rel="icon" href="favicon.ico" />
+
     <!-- TODO: 
   1. Can we embed a music player?
   2. Fun cursor?
@@ -37,28 +39,30 @@
     id="card1"
     class="card about-card w3-content w3-center w3-card-4 w3-white w3-margin-top w3-margin-bottom"
   >
-    <div class="inner-frame">
-      <button onclick="toggleTheme()">❤️</button>
-      <button class="big-button" onclick="toggleTheme()">📻</button>
-      <button
-        onclick="toggleTheme()"
-        style="
-          font-size: 2rem;
-          border: none;
-          background-color: #f0f0f0;
-          border-radius: 50%;
-          width: 60px;
-          height: 60px;
-          cursor: pointer;
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        "
-      >
-        🎉
-      </button>
+    <div class="inner-frame w3-padding-16">
+      <section class="about-row">
+        <div class="w3-third">
+          <button class="big-button" onclick="changeSong()">🦣</button>
+        </div>
+        <div class="w3-third">
+          <button class="big-button" onclick="toggleMusic()">📻</button>
+        </div>
+        <div class="w3-third">
+          <button class="big-button" onclick="toggleTheme()">🔮</button>
+        </div>
+      </section>
+      <audio
+        id="background-music"
+        src="assets/track1.mp3"
+        type="audio/mp3"
+        controls
+        loop
+        autoplay
+      ></audio>
     </div>
   </div>
 </div>
-
+  
   <!-- prettier-ignore -->
   <div class="w3-third">
   <div
@@ -141,33 +145,28 @@
   id="card4"
   class="card info-card w3-white w3-container w3-card w3-margin-bottom"
 >
-  <div class="inner-frame">
-    <div class="w3-padding-16">
-      <h6>
-        <i
-          class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"
-        ></i
-        >Code Gardener
-      </h6>
-      <h6>
-        <i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i
-        >Calgary, AB, Canada
-      </h6>
-      <h6>
-        <i
-          class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"
-        ></i
-        >wongjaimelynn@gmail.com
-      </h6>
-      <h6>
-        <i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i
-        >403-464-1160
-      </h6>
-    </div>
+  <div class="inner-frame uniform-padding">
+    <h6>
+      <i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i
+      >Code Gardener
+    </h6>
+    <h6>
+      <i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i
+      >Calgary, AB, Canada
+    </h6>
+    <h6>
+      <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i
+      >wongjaimelynn@gmail.com
+    </h6>
+    <h6>
+      <i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i
+      >403-464-1160
+    </h6>
   </div>
 </div>
 
-<div
+  <!-- prettier-ignore -->
+  <div
   id="card8"
   class="card profile-card w3-center w3-content w3-white w3-card-4"
 >
@@ -193,7 +192,7 @@
       <h5  >
         <b>Junior Software Developer / Calian, Advanced Technologies</b>
       </h5>
-      <h6 class="w3-text-teal">
+      <h6  >
         <i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2024 -
         <span class="w3-tag w3-teal w3-round">Current</span>
       </h6>
@@ -212,7 +211,7 @@
       <h5  >
         <b>Junior Systems Designer / Calian, Advanced Technologies</b>
       </h5>
-      <h6 class="w3-text-teal">
+      <h6  >
         <i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2022 -Apr 2024
       </h6>
     </article>
@@ -220,7 +219,7 @@
       <h5  >
         <b>Entry Level Systems Designer / Calian, Advanced Technologies</b>
       </h5>
-      <h6 class="w3-text-teal">
+      <h6  >
         <i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2022 - July 2022
       </h6>
     </article>
@@ -228,7 +227,7 @@
       <h5  >
         <b>Junior Electronics Engineer / A4 Systems</b>
       </h5>
-      <h6 class="w3-text-teal">
+      <h6  >
         <i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2021 - Jan 2022
       </h6>
     </article>
@@ -236,7 +235,7 @@
       <h5  >
         <b>Electrical Engineering Intern / Zephyr Sleep Technologies</b>
       </h5>
-      <h6 class="w3-text-teal">
+      <h6  >
         <i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2019 - Mar 2020
       </h6>
       <br />
@@ -253,7 +252,7 @@
     </h2>
     <div class="w3-container">
       <h5><b>University of Calgary | 2016-2021</b></h5>
-      <h6 class="w3-text-teal">
+      <h6>
         Bachelor's in Electrical Engineering + Minor in Computer Engineering
       </h6>
       <br />

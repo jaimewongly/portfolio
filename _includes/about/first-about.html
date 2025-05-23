@@ -3,24 +3,26 @@
     id="card1"
     class="card about-card w3-content w3-center w3-card-4 w3-white w3-margin-top w3-margin-bottom"
   >
-    <div class="inner-frame">
-      <button onclick="toggleTheme()">❤️</button>
-      <button class="big-button" onclick="toggleTheme()">📻</button>
-      <button
-        onclick="toggleTheme()"
-        style="
-          font-size: 2rem;
-          border: none;
-          background-color: #f0f0f0;
-          border-radius: 50%;
-          width: 60px;
-          height: 60px;
-          cursor: pointer;
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        "
-      >
-        🎉
-      </button>
+    <div class="inner-frame w3-padding-16">
+      <section class="about-row">
+        <div class="w3-third">
+          <button class="big-button" onclick="changeSong()">🦣</button>
+        </div>
+        <div class="w3-third">
+          <button class="big-button" onclick="toggleMusic()">📻</button>
+        </div>
+        <div class="w3-third">
+          <button class="big-button" onclick="toggleTheme()">🔮</button>
+        </div>
+      </section>
+      <audio
+        id="background-music"
+        src="assets/track1.mp3"
+        type="audio/mp3"
+        controls
+        loop
+        autoplay
+      ></audio>
     </div>
   </div>
 </div>

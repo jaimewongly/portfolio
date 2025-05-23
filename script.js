@@ -9,6 +9,12 @@ const card5 = document.getElementById("card5");
 const card6 = document.getElementById("card6");
 const card7 = document.getElementById("card7");
 const card8 = document.getElementById("card8");
+const songs = [
+  "assets/track1.mp3",
+  "assets/track2.mp3",
+  "assets/track3.mp3",
+  "assets/track4.mp3",
+];
 
 function toggleTheme() {
   document.body.classList.toggle("alt-theme");
@@ -43,4 +49,22 @@ function toggleFrameEffect() {
   card6.classList.toggle("card-frame-6");
   card7.classList.toggle("card-frame-7");
   card8.classList.toggle("card-frame-8");
+}
+
+function toggleMusic() {
+  const music = document.getElementById("background-music");
+  if (music.paused) {
+    music.play();
+  } else {
+    music.pause();
+  }
+}
+
+function changeSong() {
+  const music = document.getElementById("background-music");
+  const currentSong = music.getAttribute("src");
+  let currentIndex = songs.indexOf(currentSong);
+  let nextIndex = (currentIndex + 1) % songs.length;
+  music.src = songs[nextIndex];
+  music.play();
 }
