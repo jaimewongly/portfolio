@@ -349,3 +349,38 @@ h2 {
   content: var(--project-icon);
   margin-right: 0.5rem;
 }
+
+.my-name {
+  position: relative;
+}
+.my-name::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #000000;
+  transition: width 0.3s ease;
+}
+.my-name:hover::after {
+  width: 100%;
+}
+
+.growing-text {
+  transition: transform 0.3s ease;
+}
+.growing-text:hover {
+  transform: scale(1.1);
+}
+
+body {
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
