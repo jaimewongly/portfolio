@@ -68,3 +68,39 @@ function changeSong() {
   music.src = songs[nextIndex];
   music.play();
 }
+
+const input = document.getElementById("command");
+const output = document.getElementById("output");
+
+input.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    const cmd = input.value.trim();
+    input.value = "";
+    handleCommand(cmd);
+  }
+});
+
+function handleCommand(cmd) {
+  let response = "";
+
+  switch (cmd.toLowerCase()) {
+    case "help":
+      response = "Available commands: help, whoami, joke, elmo overload";
+      break;
+    case "whoami":
+      response = "Name: Jaime | Role: Code Gardener | Alignment: Chaotic Good";
+      break;
+    case "joke":
+      response =
+        "A slice of apple pie costs $2.50 in Jamaica, $3.75 in Bermuda, and $3 in the Bahamas. Those are the pie-rates of the Caribbean.";
+      break;
+    case "elmo overload":
+      response = "WARNING: Too much Elmo... initiating meltdown.";
+      // Add chaos here 💥
+      break;
+    default:
+      response = "Unknown command. Type 'help' for options.";
+  }
+
+  output.innerHTML += `<br>$ ${cmd}<br>${response}`;
+}
