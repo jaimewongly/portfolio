@@ -8,11 +8,10 @@ const card4 = document.getElementById("card4");
 const card5 = document.getElementById("card5");
 const card6 = document.getElementById("card6");
 const card7 = document.getElementById("card7");
+const card8 = document.getElementById("card8");
 
 function toggleTheme() {
   document.body.classList.toggle("alt-theme");
-  toggleProfileImage();
-  toggleAboutImage();
   toggleFrameEffect();
 }
 
@@ -43,4 +42,5 @@ function toggleFrameEffect() {
   card5.classList.toggle("card-frame-5");
   card6.classList.toggle("card-frame-6");
   card7.classList.toggle("card-frame-7");
+  card8.classList.toggle("card-frame-8");
 }
