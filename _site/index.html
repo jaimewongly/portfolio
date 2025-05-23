@@ -19,16 +19,14 @@
     <link rel="icon" href="favicon.ico" />
 
     <!-- TODO: 
-  1. Can we embed a music player?
   2. Fun cursor?
   3. Maybe add a background image?
   7. Other fun things to add?
   12. Coordinate colours
   13. Add emojis to replace old icons
-  14. Add fun theme... link to page that's the same but spooky emojis etc
   15. Fill out fun theme
   18. Look for typos
-  21. Organize about me
+  22. Work out text colours
 -->
     <div class="w3-content main-page">
       <!-- prettier-ignore -->
@@ -39,30 +37,34 @@
     id="card1"
     class="card about-card w3-content w3-center w3-card-4 w3-white w3-margin-top w3-margin-bottom"
   >
-    <div class="inner-frame w3-padding-16">
+    <div class="inner-frame">
+      <br />
       <section class="about-row">
         <div class="w3-third">
-          <button class="big-button" onclick="changeSong()">🦣</button>
+          <button class="big-button music" onclick="changeSong()"></button>
         </div>
         <div class="w3-third">
-          <button class="big-button" onclick="toggleMusic()">📻</button>
+          <button class="big-button radio" onclick="toggleMusic()"></button>
         </div>
         <div class="w3-third">
-          <button class="big-button" onclick="toggleTheme()">🔮</button>
+          <button class="big-button magic" onclick="toggleTheme()"></button>
         </div>
       </section>
-      <audio
-        id="background-music"
-        src="assets/track1.mp3"
-        type="audio/mp3"
-        controls
-        loop
-        autoplay
-      ></audio>
+      <div class="w3-padding-16">
+        <audio
+          class="music-player"
+          id="background-music"
+          src="assets/track1.mp3"
+          type="audio/mp3"
+          controls
+          loop
+          autoplay
+        ></audio>
+      </div>
     </div>
   </div>
 </div>
-  
+
   <!-- prettier-ignore -->
   <div class="w3-third">
   <div
@@ -73,44 +75,71 @@
       <h2 class="section-title about">About Me (Jaime!)</h2>
       <section class="about-row">
         <div class="w3-third">
-          <img src="images/elmo4.jpg" alt="Clueless" class="about-mini-card" />
-          <h6>Elmo</h6>
+          <img
+            src="images/elmo4.jpg"
+            alt="Elmo"
+            class="about-mini-card"
+          /><br />
         </div>
         <div class="w3-third">
-          <img src="images/elmo4.jpg" alt="Clueless" class="about-mini-card" />
-          <h6>Elmo</h6>
+          <img
+            src="images/elmo4.jpg"
+            alt="Elmo"
+            class="about-mini-card"
+          /><br />
         </div>
         <div class="w3-third">
-          <img src="images/elmo4.jpg" alt="Clueless" class="about-mini-card" />
-          <h6>Elmo</h6>
-        </div>
-      </section>
-      <section class="about-row">
-        <div class="w3-third">
-          <img src="images/elmo4.jpg" alt="Clueless" class="about-mini-card" />
-          <h6>Elmo</h6>
-        </div>
-        <div class="w3-third">
-          <img src="images/elmo4.jpg" alt="Clueless" class="about-mini-card" />
-          <h6>Elmo</h6>
-        </div>
-        <div class="w3-third">
-          <img src="images/elmo4.jpg" alt="Clueless" class="about-mini-card" />
-          <h6>Elmo</h6>
+          <img
+            src="images/elmo4.jpg"
+            alt="Elmo"
+            class="about-mini-card"
+          /><br />
         </div>
       </section>
       <section class="about-row">
         <div class="w3-third">
-          <img src="images/elmo4.jpg" alt="Clueless" class="about-mini-card" />
-          <h6>Elmo</h6>
+          <img
+            src="images/elmo4.jpg"
+            alt="Elmo"
+            class="about-mini-card"
+          /><br />
         </div>
         <div class="w3-third">
-          <img src="images/elmo4.jpg" alt="Clueless" class="about-mini-card" />
-          <h6>Elmo</h6>
+          <img
+            src="images/elmo4.jpg"
+            alt="Elmo"
+            class="about-mini-card"
+          /><br />
         </div>
         <div class="w3-third">
-          <img src="images/elmo4.jpg" alt="Clueless" class="about-mini-card" />
-          <h6>Elmo</h6>
+          <img
+            src="images/elmo4.jpg"
+            alt="Elmo"
+            class="about-mini-card"
+          /><br />
+        </div>
+      </section>
+      <section class="about-row">
+        <div class="w3-third">
+          <img
+            src="images/elmo4.jpg"
+            alt="Elmo"
+            class="about-mini-card"
+          /><br />
+        </div>
+        <div class="w3-third">
+          <img
+            src="images/elmo4.jpg"
+            alt="Elmo"
+            class="about-mini-card"
+          /><br />
+        </div>
+        <div class="w3-third">
+          <img
+            src="images/elmo4.jpg"
+            alt="Elmo"
+            class="about-mini-card"
+          /><br />
         </div>
       </section>
     </div>
@@ -145,23 +174,17 @@
   id="card4"
   class="card info-card w3-white w3-container w3-card w3-margin-bottom"
 >
-  <div class="inner-frame uniform-padding">
-    <h6>
-      <i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i
-      >Code Gardener
-    </h6>
-    <h6>
-      <i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i
-      >Calgary, AB, Canada
-    </h6>
-    <h6>
-      <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i
-      >wongjaimelynn@gmail.com
-    </h6>
-    <h6>
-      <i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i
-      >403-464-1160
-    </h6>
+  <div class="inner-frame">
+    <div class="w3-padding">
+      <h5 class="occupation">Code Gardener</h5>
+      <h5 class="hobby1">Runner</h5>
+      <h5 class="hobby2">Zine Author</h5>
+      <h5 class="hobby3">Collage Enthusiast</h5>
+      <hr />
+      <h5 class="home">Calgary, AB, Canada</h5>
+      <h5 class="email">wongjaimelynn@gmail.com</h5>
+      <h5 class="phone">403-464-1160</h5>
+    </div>
   </div>
 </div>
 
@@ -180,22 +203,26 @@
   <!-- prettier-ignore -->
   <div class="w3-twothird">
   <!-- prettier-ignore -->
-  <div id="card5" class="w3-card w3-container w3-white w3-margin-bottom">
+  <div id="card5" class="w3-card work-card w3-container w3-white w3-margin-bottom">
   <div class="inner-frame">
-    <h2 class="  w3-padding-16">
-      <i
-        class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"
-      ></i
-      >Work Experience
+    <h2 class="work w3-padding-16">
+      Work Experience
     </h2>
     <article class="w3-container">
       <h5  >
-        <b>Junior Software Developer / Calian, Advanced Technologies</b>
+        <b>Software Developer / Clueless (Personal Project)
       </h5>
-      <h6  >
-        <i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2024 -
-        <span class="w3-tag w3-teal w3-round">Current</span>
+      <p class="tech-stack">
+        Tech Stack: Python, PostgreSQL, Expo.<br />
       </h6>
+      <h6>
+        Full-stack development of an ML-powered dress-up app. Work in progress!
+      </h6>
+    </article>
+    <article class="w3-container">
+      <h5  >
+        <b>Junior Software Developer / Calian, Advanced Technologies | May 2024 -</b>
+      </h5>
       <p class="tech-stack">
         Tech Stack: Kotlin, Python, Typescript, React, RESTful APIs (HTTP,
         Json).<br />
@@ -208,55 +235,25 @@
       <hr />
     </article>
     <article class="w3-container">
-      <h5  >
-        <b>Junior Systems Designer / Calian, Advanced Technologies</b>
+      <h5 class="old-job-text">
+        Junior Systems Designer / Calian, Advanced Technologies | Aug 2022 -Apr 2024 <br/><br/>
+        Entry Level Systems Designer / Calian, Advanced Technologies | Jan 2022 - July 2022 <br/><br/>
+        Junior Electronics Engineer / A4 Systems | Jul 2021 - Jan 2022 <br/><br/>
+        Electrical Engineering Intern / Zephyr Sleep Technologies | May 2019 - Mar 2020 <br/><br/>
       </h5>
-      <h6  >
-        <i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2022 -Apr 2024
-      </h6>
-    </article>
-    <article class="w3-container">
-      <h5  >
-        <b>Entry Level Systems Designer / Calian, Advanced Technologies</b>
-      </h5>
-      <h6  >
-        <i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2022 - July 2022
-      </h6>
-    </article>
-    <article class="w3-container">
-      <h5  >
-        <b>Junior Electronics Engineer / A4 Systems</b>
-      </h5>
-      <h6  >
-        <i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2021 - Jan 2022
-      </h6>
-    </article>
-    <article class="w3-container">
-      <h5  >
-        <b>Electrical Engineering Intern / Zephyr Sleep Technologies</b>
-      </h5>
-      <h6  >
-        <i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2019 - Mar 2020
-      </h6>
-      <br />
     </article>
   </div>
 </div>
 
   <!-- prettier-ignore -->
-  <div id="card6" class="education-card w3-container w3-card w3-white">
-  <div class="inner-frame">
-    <h2 class="w3-padding-16">
-      <span role="img" aria-label="education">🎓</span>
-      Education
-    </h2>
-    <div class="w3-container">
-      <h5><b>University of Calgary | 2016-2021</b></h5>
-      <h6>
-        Bachelor's in Electrical Engineering + Minor in Computer Engineering
-      </h6>
-      <br />
-    </div>
+  <div id="card6" class="w3-container w3-card w3-white">
+  <div class="inner-frame w3-padding">
+    <h2 class="education w3-padding-16">Education</h2>
+    <h5><b>University of Calgary | 2016-2021</b></h5>
+    <h6>
+      Bachelor's in Electrical Engineering + Minor in Computer Engineering
+    </h6>
+    <br />
   </div>
 </div>
 

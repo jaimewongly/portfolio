@@ -21,6 +21,11 @@ h2 {
   padding: 16px;
 }
 
+/* Text styles */
+.old-job-text {
+  color: #525252;
+}
+
 /* About section styles */
 .profile-image-tall {
   width: 100%;
@@ -48,6 +53,10 @@ h2 {
 .big-button {
   font-size: 2.5rem;
 }
+.music-player {
+  padding: 16px;
+  width: 100%;
+}
 
 /* Resume section styles */
 .equal-height-row {
@@ -73,11 +82,6 @@ h2 {
 .tech-stack {
   font-weight: bold;
 }
-.education-card {
-  max-width: 774px;
-  max-height: 179px;
-  width: 100%;
-}
 .profile-card {
   max-height: 496px;
   padding: 16px;
@@ -85,7 +89,10 @@ h2 {
   height: 100%;
 }
 .info-card {
-  height: 318px;
+  height: 100%;
+}
+.work-card {
+  height: 100%;
 }
 
 /* Project section styles */
@@ -179,16 +186,88 @@ h2 {
 
 /* Responsive styles */
 :root {
-  --about-icon: "🙌"; /* default theme */
+  --about-icon: "🙌";
+  --occupation-icon: "🌱";
+  --home-icon: "🏡";
+  --email-icon: "📧";
+  --phone-icon: "📱";
+  --education-icon: "🎓";
+  --work-icon: "💻";
+  --radio-icon: "📻";
+  --music-icon: "🎵";
+  --magic-icon: "🔮";
+  --hobby1-icon: "👟";
+  --hobby2-icon: "🖊️";
+  --hobby3-icon: "🖼️";
   --profile-image: "images/meandlulu.jpg";
   --about-image: "images/me.jpg";
 }
 .alt-theme {
-  --about-icon: "🦇"; /* spooky theme */
+  --about-icon: "🦇";
+  --occupation-icon: "🍀";
+  --home-icon: "🏰";
+  --email-icon: "💌";
+  --phone-icon: "🤳";
+  --education-icon: "📜";
+  --work-icon: "🧠";
+  --radio-icon: "🪕";
+  --music-icon: "🎶";
+  --magic-icon: "🪄";
+  --hobby1-icon: "🌪️";
+  --hobby2-icon: "✏️";
+  --hobby3-icon: "🪷";
   --profile-image: "images/meandlulu2.jpg";
   --about-image: "images/me2.jpg";
 }
-h2.about::before {
+.about::before {
   content: var(--about-icon);
+  margin-right: 0.5rem;
+}
+.occupation::before {
+  content: var(--occupation-icon);
+  margin-right: 0.5rem;
+}
+.home::before {
+  content: var(--home-icon);
+  margin-right: 0.5rem;
+}
+.email::before {
+  content: var(--email-icon);
+  margin-right: 0.5rem;
+}
+.phone::before {
+  content: var(--phone-icon);
+  margin-right: 0.5rem;
+}
+.education::before {
+  content: var(--education-icon);
+  margin-right: 0.5rem;
+}
+.work::before {
+  content: var(--work-icon);
+  margin-right: 0.5rem;
+}
+.radio::before {
+  content: var(--radio-icon);
+  margin-right: 0.5rem;
+}
+.music::before {
+  content: var(--music-icon);
+  margin-right: 0.5rem;
+}
+.magic::before {
+  content: var(--magic-icon);
+  margin-right: 0.5rem;
+}
+.hobby1::before {
+  content: var(--hobby1-icon);
+  margin-right: 0.5rem;
+}
+.hobby2::before {
+  content: var(--hobby2-icon);
+  margin-right: 0.5rem;
+}
+.hobby3::before {
+  content: var(--hobby3-icon);
   margin-right: 0.5rem;
 }
