@@ -277,8 +277,8 @@ h2 {
   --about-icon: "⭐";
   --occupation-icon: "🌱";
   --home-icon: "🏡";
-  --email-icon: "📧";
-  --phone-icon: "📱";
+  --linkedin-icon: "📧";
+  --github-icon: "⚒️";
   --education-icon: "🎓";
   --work-icon: "💻";
   --radio-icon: "📻";
@@ -294,8 +294,8 @@ h2 {
   --about-icon: "🙌";
   --occupation-icon: "🍀";
   --home-icon: "🏰";
-  --email-icon: "💌";
-  --phone-icon: "🤳";
+  --linkedin-icon: "💌";
+  --github-icon: "⚔️";
   --education-icon: "📜";
   --work-icon: "🧠";
   --radio-icon: "🪕";
@@ -319,12 +319,12 @@ h2 {
   content: var(--home-icon);
   margin-right: 0.5rem;
 }
-.email::before {
-  content: var(--email-icon);
+.github::before {
+  content: var(--github-icon);
   margin-right: 0.5rem;
 }
-.phone::before {
-  content: var(--phone-icon);
+.linkedin::before {
+  content: var(--linkedin-icon);
   margin-right: 0.5rem;
 }
 .education::before {
