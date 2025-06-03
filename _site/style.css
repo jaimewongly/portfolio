@@ -383,3 +383,32 @@ h2 {
 .growing-text:hover {
   transform: scale(1.1);
 }
+
+.flip-container {
+  perspective: 1000px;
+  position: relative;
+}
+.flipper {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: 0.6s;
+  position: absolute;
+  top: 0;
+  left: -50%;
+  transform-origin: right center;
+}
+.flip-container.flipped .flipper {
+  transform: rotateY(180deg);
+}
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+.back {
+  transform: rotateY(180deg);
+}

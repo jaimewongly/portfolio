@@ -133,3 +133,7 @@ function toggleAnimal() {
   current = (current + 1) % emojis.length;
   button.innerHTML = emojis[current] + "<br>Click Me!";
 }
+
+function flipCard(tile) {
+  tile.classList.toggle("flipped");
+}
