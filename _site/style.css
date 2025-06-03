@@ -387,6 +387,14 @@ h2 {
 .flip-container {
   perspective: 1000px;
   position: relative;
+  border: 2px solid #ccc;
+  border-radius: 2px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+.flip-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.8);
 }
 .flipper {
   width: 100%;
