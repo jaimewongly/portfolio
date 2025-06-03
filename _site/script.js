@@ -21,6 +21,7 @@ const songs = [
 function toggleTheme() {
   document.body.classList.toggle("alt-theme");
   toggleFrameEffect();
+  flipAllTiles();
 }
 
 function toggleWallpaper() {
@@ -56,6 +57,18 @@ function toggleFrameEffect() {
   card7.classList.toggle("card-frame-7");
   card8.classList.toggle("card-frame-8");
   card9.classList.toggle("card-frame-9");
+}
+
+function flipAllTiles() {
+  document.getElementById("tile1").classList.toggle("flipped");
+  document.getElementById("tile2").classList.toggle("flipped");
+  document.getElementById("tile3").classList.toggle("flipped");
+  document.getElementById("tile4").classList.toggle("flipped");
+  document.getElementById("tile5").classList.toggle("flipped");
+  document.getElementById("tile6").classList.toggle("flipped");
+  document.getElementById("tile7").classList.toggle("flipped");
+  document.getElementById("tile8").classList.toggle("flipped");
+  document.getElementById("tile9").classList.toggle("flipped");
 }
 
 function toggleMusic() {
